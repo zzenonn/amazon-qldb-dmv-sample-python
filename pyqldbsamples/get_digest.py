@@ -20,8 +20,8 @@ from logging import basicConfig, getLogger, INFO
 
 from boto3 import client
 
-from pyqldbsamples.constants import Constants
-from pyqldbsamples.qldb.qldb_string_utils import digest_response_to_string
+from constants import Constants
+from qldb.qldb_string_utils import digest_response_to_string
 
 logger = getLogger(__name__)
 basicConfig(level=INFO)

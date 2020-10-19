@@ -20,14 +20,14 @@ from logging import basicConfig, getLogger, INFO
 
 from boto3 import client
 
-from pyqldbsamples.constants import Constants
-from pyqldbsamples.model.sample_data import SampleData
-from pyqldbsamples.get_revision import lookup_registration_for_vin
-from pyqldbsamples.get_digest import get_digest_result
-from pyqldbsamples.verifier import to_base_64, verify_document, parse_block, flip_random_bit
-from pyqldbsamples.qldb.block_address import block_address_to_dictionary
-from pyqldbsamples.connect_to_ledger import create_qldb_driver
-from pyqldbsamples.qldb.qldb_string_utils import block_response_to_string, value_holder_to_string
+from constants import Constants
+from model.sample_data import SampleData
+from get_revision import lookup_registration_for_vin
+from get_digest import get_digest_result
+from verifier import to_base_64, verify_document, parse_block, flip_random_bit
+from qldb.block_address import block_address_to_dictionary
+from connect_to_ledger import create_qldb_driver
+from qldb.qldb_string_utils import block_response_to_string, value_holder_to_string
 
 logger = getLogger(__name__)
 basicConfig(level=INFO)

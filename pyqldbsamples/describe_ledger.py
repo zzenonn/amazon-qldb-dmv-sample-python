@@ -20,7 +20,7 @@ from logging import basicConfig, getLogger, INFO
 
 from boto3 import client
 
-from pyqldbsamples.constants import Constants
+from constants import Constants
 
 logger = getLogger(__name__)
 basicConfig(level=INFO)

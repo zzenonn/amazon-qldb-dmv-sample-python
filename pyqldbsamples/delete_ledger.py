@@ -21,8 +21,8 @@ from time import sleep
 
 from boto3 import client
 
-from pyqldbsamples.constants import Constants
-from pyqldbsamples.describe_ledger import describe_ledger
+from constants import Constants
+from describe_ledger import describe_ledger
 
 logger = getLogger(__name__)
 basicConfig(level=INFO)

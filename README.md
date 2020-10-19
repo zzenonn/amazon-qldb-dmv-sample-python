@@ -51,6 +51,22 @@ $ cd docs
 $ make html
 ```
 
+## Zenon Docs
+# QLDB Demo
+
+1. Activate the virtual environment by running `source ./.env/bin/activate`
+2. Run `python create_ledger.py` this creates a ledger which acts as a particular schema or collection of tables.
+
+![ledge to relational](https://docs.aws.amazon.com/qldb/latest/developerguide/images/rdbms-mapping.png)
+
+3. Run `python create_table.py` and `python create_index.py` this creates the tables and indexes required for the vehicle registration application.
+4. Run `python insert_document.py` to populate the tables.
+5. Run find queries `python find_vehicles.py`
+6. Update a document by running `python transfer_vehicle_ownership.py`. This transfers the ownership from one user to another.
+7. Update a document by running `python add_secondary_owner.py`. This adds a secondary owner to a vehicle.
+8. You can query the history of a document by running `python query_history.py`.
+9. You can efficiently verify the integrity of a document in your ledger's journal by using cryptographic hashing with SHA-256. Run `python get_revision.py`.
+
 ## License
 
 This library is licensed under the MIT-0 License.

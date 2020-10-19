@@ -21,7 +21,7 @@ from logging import basicConfig, getLogger, INFO
 from botocore.exceptions import ClientError
 
 from pyqldb.driver.qldb_driver import QldbDriver
-from pyqldbsamples.constants import Constants
+from constants import Constants
 
 logger = getLogger(__name__)
 basicConfig(level=INFO)

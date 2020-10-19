@@ -18,8 +18,8 @@
 # https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html
 from logging import basicConfig, getLogger, INFO
 
-from pyqldbsamples.model.sample_data import print_result
-from pyqldbsamples.connect_to_ledger import create_qldb_driver
+from model.sample_data import print_result
+from connect_to_ledger import create_qldb_driver
 
 logger = getLogger(__name__)
 basicConfig(level=INFO)

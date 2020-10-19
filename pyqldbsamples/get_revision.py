@@ -21,13 +21,13 @@ from logging import basicConfig, getLogger, INFO
 from amazon.ion.simpleion import loads
 from boto3 import client
 
-from pyqldbsamples.constants import Constants
-from pyqldbsamples.get_digest import get_digest_result
-from pyqldbsamples.model.sample_data import SampleData, convert_object_to_ion
-from pyqldbsamples.qldb.block_address import block_address_to_dictionary
-from pyqldbsamples.verifier import verify_document, flip_random_bit, to_base_64
-from pyqldbsamples.connect_to_ledger import create_qldb_driver
-from pyqldbsamples.qldb.qldb_string_utils import value_holder_to_string
+from constants import Constants
+from get_digest import get_digest_result
+from model.sample_data import SampleData, convert_object_to_ion
+from qldb.block_address import block_address_to_dictionary
+from verifier import verify_document, flip_random_bit, to_base_64
+from connect_to_ledger import create_qldb_driver
+from qldb.qldb_string_utils import value_holder_to_string
 
 logger = getLogger(__name__)
 basicConfig(level=INFO)

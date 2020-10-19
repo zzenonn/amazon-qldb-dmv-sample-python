@@ -19,9 +19,9 @@
 from datetime import datetime, timedelta
 from logging import basicConfig, getLogger, INFO
 
-from pyqldbsamples.model.sample_data import print_result, get_document_ids, SampleData
-from pyqldbsamples.constants import Constants
-from pyqldbsamples.connect_to_ledger import create_qldb_driver
+from model.sample_data import print_result, get_document_ids, SampleData
+from constants import Constants
+from connect_to_ledger import create_qldb_driver
 
 logger = getLogger(__name__)
 basicConfig(level=INFO)
